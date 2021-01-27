@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.cvx-table-wrapper {
+  background-color: #70abbb;
+  padding: calc(#{$component-padding} / 2);
+  border-radius: $base-border-radius;
+}
+
+.custom-table {
+  table-layout: fixed;
+}

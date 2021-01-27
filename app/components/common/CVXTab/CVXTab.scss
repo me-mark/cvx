@@ -1,0 +1,39 @@
+@import '../../../styles/variables.scss';
+.cvx-tab {
+  &__wrapper {
+    position: relative;
+    &__last-button {
+      position: absolute;
+      left: -25px;
+      top: 12px;
+      cursor: pointer;
+      color: #a2b9bf;
+      &:hover {
+        color: #1a5c6f;
+      }
+    }
+    &__next-button {
+      position: absolute;
+      right: -25px;
+      top: 12px;
+      cursor: pointer;
+      color: #a2b9bf;
+      &:hover {
+        color: #1a5c6f;
+      }
+    }
+  }
+  &__content {
+    overflow: hidden;
+    border-bottom: 1px solid #a2b9bf;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__title {
+    font-size: calc(#{$base-font-size} + 6px);
+  }
+  &__item {
+    padding: calc(#{$item-gap} * 1.5);
+  }
+}

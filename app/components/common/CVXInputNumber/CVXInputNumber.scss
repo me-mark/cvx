@@ -1,0 +1,20 @@
+@import "../../../styles/variables.scss";
+.cvx-input-number {
+  height: $base-line-height;
+  .ant-input-number {
+    height: inherit;
+    width: 100%;
+    border: none;
+    border-radius: $base-border-radius;
+    font-size: $base-font-size;
+    .ant-input-number-input-wrap {
+      height: inherit;
+      .ant-input-number-input {
+        height: inherit;
+        font-weight: $font-weight-bold;
+        text-align: right;
+        padding-right: 30px;
+      }
+    }
+  }
+}

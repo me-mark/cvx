@@ -1,0 +1,75 @@
+@import '../../../styles/variables.scss';
+
+.login-content {
+  position: relative;
+  padding: 30px;
+  float: right;
+  background: #f0f4f7 0% 0% no-repeat padding-box;
+  box-shadow: -40px 50px 99px #00000050;
+  border-radius: 0px 0px 0px 80px;
+  opacity: 1;
+  display: flex;
+  align-items: flex-end;
+
+  &__form {
+    width: 100%;
+    padding: 0 50px 50px 50px;
+
+    &__input-wrapper {
+      // margin-bottom: 40px;
+      margin-bottom: 10px;
+    }
+    &__input-password-wrapper {
+      margin-bottom: 5px;
+    }
+
+    &__button {
+      background-color: #3f9886;
+      box-shadow: 0 10px 10px rgba(72, 172, 152, 0.36);
+      width: 100%;
+      height: $base-line-height;
+      border-radius: 10px;
+      font-size: $base-font-size;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    &__button:focus {
+      outline: none;
+    }
+
+    &__input {
+      box-shadow: 0px 40px 60px #00000029;
+      border: none;
+    }
+
+    &__third-part {
+      display: flex;
+      align-items: center;
+      margin: 0px 0px 40px 0px;
+      &__remember-me {
+        flex-grow: 1;
+      }
+      &__forgot-password {
+        display: flex;
+        color: #84939d;
+        letter-spacing: 0.32px;
+        justify-content: flex-end;
+        align-items: center;
+        &__text {
+          margin: 0px 5px 0px 0px;
+          color: #84939d;
+          font-size: calc(#{$base-font-size} - 2px);
+        }
+        &__text:hover {
+          color: $base-text-color;
+        }
+        &__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

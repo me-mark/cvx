@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+
+.dashboard__summary {
+  display: flex;
+  &:nth-child(-n+2) {
+    margin-right: -50px;
+  }
+  &__1 {
+    padding: 40px 38px;
+    background: linear-gradient(155deg, #1a5c6f 0%, #2f89a3 100%);
+    border-radius: 0px 0px 0px 80px;
+    box-shadow: 0px 20px 25px #287C9364;
+    width: 280px;
+    height: 230px;
+
+    &__icon {
+      margin-bottom: 38px;
+      cursor: pointer;
+    }
+
+    &__text {
+      font: normal normal normal 80px/23px Chakra Petch;
+      margin-bottom: 38px;
+      color: white;
+      cursor: pointer;
+    }
+
+    &__title {
+      color: #5EB5CE;
+      font-size: calc(#{$base-font-size} - 2px);
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+
+  &__2 {
+    width: 230px;
+    padding: 40px 38px;
+    background: #48AC98;
+    box-shadow: 0px 40px 50px #48AC9843;
+    border-radius: 0px 80px 0px 80px;
+    position: relative;
+    left: -80px;
+    height: 230px;
+
+    &__icon {
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
+    &__text {
+      font: normal normal normal 80px/23px Chakra Petch;
+      color: white;
+      margin-bottom: 36px;
+      cursor: pointer;
+    }
+
+    &__title {
+      color: #89D6C7;
+      font-size: calc(#{$base-font-size} - 2px);
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

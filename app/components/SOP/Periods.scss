@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+.periods {
+  @include component;
+  margin-top: $component-margin-bottom;
+  margin-bottom: $component-margin-bottom;
+  &__title {
+    font-size: $base-font-size;
+  }
+  &__list {
+    display: flex;
+    gap: $item-gap;
+    &__date {
+      .ant-input {
+        text-align: center;
+        font-size: $base-font-size !important;
+      }
+    }
+  }
+}

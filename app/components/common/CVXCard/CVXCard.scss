@@ -1,0 +1,16 @@
+@import "../../../styles/variables.scss";
+.cvx-card {
+  height: $base-line-height;
+  line-height: $base-line-height;
+  background-color: white;
+  border-radius: $base-border-radius;
+  min-width: $base-item-minwidth;
+  font-size: $base-font-size;
+  font-weight: $font-weight-bold;
+  text-align: center;
+  border: solid 2px transparent;
+
+  &__active {
+    border: solid 2px $primary-color;
+  }
+}

@@ -1,0 +1,84 @@
+@import '../../styles/variables.scss';
+
+@mixin document-item {
+  display: grid;
+  grid-template-columns: 8fr 2fr 6fr 1fr;
+  column-gap: $item-gap;
+}
+
+@mixin one-line-text {
+  -o-text-overflow: ellipsis;
+  /* Opera */
+  text-overflow: ellipsis;
+  /* IE, Safari (WebKit) */
+  overflow: hidden;
+  /* don't show excess chars */
+  white-space: nowrap;
+  /* force single line */
+}
+
+.document-list {
+  margin-left: calc(#{$item-gap} * 2);
+  flex-grow: 1;
+  border-radius: $base-border-radius;
+  background: #D3E1E5;
+  padding: calc(#{$item-gap} + 5px);
+
+  &__title {
+    font-size: $base-font-size;
+    font-weight: bold;
+    color: #495B70;
+  }
+
+  &__header {
+    font-size: calc(#{$base-font-size} - 2px);
+    font-weight: bold;
+    color: #384643;
+    @include document-item;
+    padding: $item-gap;
+  }
+
+  &__items {}
+
+  &__item {
+    @include document-item;
+    height: $base-line-height;
+    background: white;
+    border-radius: $base-border-radius;
+    align-items: center;
+    padding: $item-gap calc(#{$item-gap} + 5px);
+    margin-bottom: $item-gap;
+  }
+
+  &__name {
+    color: $base-text-color;
+    font-weight: bold;
+    border-right: solid 1px #eaeaea;
+    line-height: calc(#{$base-line-height} - 18px);
+    min-height: calc(#{$base-line-height} - 18px);
+    cursor: pointer;
+    @include one-line-text;
+  }
+
+  &__expires {
+    color: #B5B5B5;
+    font-weight: bold;
+    border-right: solid 1px #eaeaea;
+    line-height: calc(#{$base-line-height} - 18px);
+    min-height: calc(#{$base-line-height} - 18px);
+  }
+
+  &__description {
+    color: #B5B5B5;
+    font-weight: bold;
+    border-right: solid 1px #eaeaea;
+    line-height: calc(#{$base-line-height} - 18px);
+    min-height: calc(#{$base-line-height} - 18px);
+    @include one-line-text;
+  }
+
+  &__close {
+    text-align: center;
+    cursor: pointer;
+  }
+}

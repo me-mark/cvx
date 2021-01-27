@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.dashboard {
+  &__promotion {
+    &:first-child {
+      background: $primary-color;
+    }
+    &:nth-child(2) {
+      background-color: $dark-green;
+    }
+    padding: $component-padding;
+    color: white;
+    display: grid;
+    grid-template-areas:
+      'a b'
+      'a c';
+    margin-bottom: $item-gap;
+    border-radius: 6px;
+
+    &__icon {
+      grid-area: a;
+      @include center;
+    }
+
+    &__title {
+      grid-area: b;
+      font-size: calc(#{$base-font-size} + 4px);
+      font-weight: bold;
+      margin-left: $component-padding;
+    }
+
+    &__content {
+      margin-left: $component-padding;
+      grid-area: c;
+      font-size: calc(#{$base-font-size} - 4px);
+    }
+  }
+}

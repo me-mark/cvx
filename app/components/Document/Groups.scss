@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+.document-groups {
+  &__item {
+    display: flex;
+  }
+  &__item-content {
+    font-size: calc(#{$base-font-size} + 6px);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #ACB9C1;
+    background: white;
+    border-radius: $base-border-radius;
+    display: flex;
+    align-items: center;
+    width: 432px;
+    height: 90px;
+    padding: 30px;
+    margin-bottom: $item-gap;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 70px;
+  }
+
+  &__active {
+    color: white;
+    background: $dark-green;
+  }
+
+  &__active-image {
+    position: relative;
+    left: -5px;
+  }
+}

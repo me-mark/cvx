@@ -1,0 +1,73 @@
+@import '../../../styles/variables.scss';
+
+.select-box {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  font-size: $base-font-size;
+  font-weight: bold;
+  color: $base-text-color;
+  min-height: $base-line-height;
+}
+.dropdown {
+  z-index: 1001;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 17px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 10px 40px 34px -17px rgba(0, 0, 0, 0.25);
+  color: $base-text-color;
+  font-size: $base-font-size;
+  cursor: pointer;
+  -webkit-text-size-adjust: none;
+}
+.option {
+  color: $base-text-color;
+  font-size: $base-font-size;
+  cursor: pointer;
+  -webkit-text-size-adjust: none;
+  font-weight: bold;
+  &:hover {
+    background: none;
+    color: #4a9cb4;
+  }
+}
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: white;
+  color: #4a9cb4;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: white;
+}
+.ant-select-selector {
+  padding: 0px 40px 0px 17px !important;
+  min-height: $base-line-height;
+  color: $base-text-color;
+  min-height: 30px;
+}
+
+.ant-select {
+  line-height: 30px;
+}
+
+.select-box {
+  width: 100%;
+  &__title {
+    padding: 10px 17px 0px 17px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    color: #b5b5b5;
+    text-transform: uppercase;
+    font-size: calc(#{$base-font-size} - 4px);
+    position: relative;
+    top: -2px;
+  }
+  .ant-select-selection-item {
+    font-size: $base-font-size;
+  }
+  .ant-select {
+    position: relative;
+    top: -10px;
+  }
+}

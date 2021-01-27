@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+.custom-upload {
+  background-color: white;
+  border-radius: 10px;
+  padding: 11px 20px;
+  width: 100%;
+  min-width: 400px;
+  height: $base-line-height;
+  cursor: pointer;
+  &__title {
+    font-size: calc(#{$base-font-size} - 3px);
+    letter-spacing: 2.4px;
+    color: #b5b5b5;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    top: -4px;
+  }
+  &__placeholder {
+    font-size: $base-font-size;
+    color: $base-text-color;
+    font-weight: bold;
+    position: relative;
+    top: -6px;
+  }
+}
+
+.ant-upload.ant-upload-select {
+  display: inline-block;
+  width: 100%;
+}

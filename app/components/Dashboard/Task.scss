@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.dashboard__task {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  height: $base-line-height;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: $component-margin-bottom;
+  padding: $item-gap;
+
+  &__label {
+    @include center;
+    font-size: $base-font-size;
+    font-weight: bold;
+    color: #B5B5B5;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    color: #384643;
+    font-size: ($base-font-size - 2px);
+    font-weight: bold;
+    margin-left: $item-gap;
+    border-right: solid 1px #EAEAEA;
+  }
+
+  &__icon {
+    @include center;
+    cursor: pointer;
+  }
+
+}

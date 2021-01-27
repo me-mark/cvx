@@ -1,0 +1,5 @@
+@import '../../../styles/variables.scss';
+.cvx-title {
+  font-weight: bold;
+  font-size: calc(#{$base-font-size} + 4px);
+}

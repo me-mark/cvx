@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.dashboard {
+  display: grid;
+  grid-template-areas:
+    "a a a"
+    "b c d";
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: $item-gap;
+
+  &__summary-list {
+    grid-area: a;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $component-padding;
+    &__skeleton {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__task-list {
+    grid-area: b;
+
+    &__list {
+      @include component;
+    }
+  }
+
+
+  &__promotion-list {
+    &__list {
+      @include component;
+    }
+
+    grid-area: c;
+  }
+
+  &__notification-list {
+    &__list {
+      @include component;
+    }
+
+    grid-area: d;
+  }
+}

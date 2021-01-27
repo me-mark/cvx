@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+.covenent-body {
+  margin-top: calc(#{$item-gap} * 2);
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  &__col {
+    width: 50%;
+  }
+  &__title {
+    color: #495B70;
+    font-weight: bold;
+    font-size: calc(#{$base-font-size} + 6px);
+    letter-spacing: 0.48px;
+    height: $base-line-height;
+    line-height: $base-line-height;
+  }
+}

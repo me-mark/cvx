@@ -1,0 +1,155 @@
+@import '../../../styles/variables.scss';
+.header-wrapper {
+  z-index: 11 !important;
+  background: white !important;
+  position: fixed !important;
+  top: 0px;
+  align-self: flex-end;
+  display: flex;
+
+  .toolBar {
+    .item-menu {
+      color: white;
+      padding: 0px 10px;
+      font-size: $base-font-size;
+    }
+  }
+}
+
+.brand-header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  height: 140px;
+  position: sticky;
+  top: 0px;
+  font-family: 'Gilroy-Medium';
+
+  &__logo {
+    display: flex;
+    flex-grow: 1;
+    padding: 30px 50px 30px 50px;
+    cursor: pointer;
+  }
+
+  &__user-info {
+    width: 500px;
+    background-color: #F1F4F4;
+    height: 140px;
+    padding: 25px;
+    border-radius: 0 0 0 20px;
+    display: grid;
+    align-items: end;
+    align-self: flex-end;
+    grid-template-rows: 1fr 1fr;
+
+    &__welcome {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr 1fr;
+      gap: 15px;
+      color: #8ba7b9;
+      font-size: $base-font-size;
+
+      &__text {
+        line-height: 0px;
+      }
+    }
+
+    &__user {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr 1fr;
+      gap: 15px;
+
+      &__short-name {
+        background-color: #48ac98;
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px;
+        box-shadow: 3px 7px 21px 0 #48ac98;
+        border-radius: 20px;
+        text-transform: uppercase;
+        color: #b2fff0;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__full-name {
+        font-size: calc(#{$base-font-size} + 7px);
+        color: #000;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        font-family: 'Gilroy-Bold';
+      }
+
+      &__button {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(179, 195, 204, 0.18);
+        position: relative;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__icon {
+          width: 30px;
+          height: 30px;
+          fill: #f0f4f7;
+          -webkit-transition: fill 0.5s;
+          transition: fill 0.5s;
+        }
+
+        &__icon:hover {
+          fill: #b2fff0;
+        }
+      }
+    }
+  }
+
+  &__group-info {
+    width: 500px;
+    background-color: #f7faff;
+    height: 140px;
+    padding: 25px;
+    border-radius: 0 0 0 20px;
+    position: relative;
+    left: 12px;
+    z-index: -1;
+    display: grid;
+    align-items: end;
+    align-self: flex-end;
+    grid-template-rows: 1fr 1fr;
+
+    &__wrapper {
+      height: 70px;
+    }
+
+    &__title {
+      gap: 15px;
+      color: #8ba7b9;
+      font-size: $base-font-size;
+    }
+
+    &__name {
+      font-size: calc(#{$base-font-size} + 7px);
+      color: #000;
+      line-height: 1;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      font-family: 'Gilroy-Bold';
+    }
+  }
+}

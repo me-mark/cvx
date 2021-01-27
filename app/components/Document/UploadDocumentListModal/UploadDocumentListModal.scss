@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.upload-document-list-modal {
+  &__title {
+    font-size: calc(#{$base-font-size} + 2px);
+  }
+
+  &__select-files {
+    @include center;
+    width: 100%;
+    height: $base-line-height;
+    background: white;
+    border-radius: $base-border-radius;
+    font-size: $base-font-size;
+    margin-bottom: $component-padding;
+    color: #b5b5b5;
+  }
+
+  &__group-category {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: $item-gap;
+    margin-bottom: $component-padding;
+  }
+
+  &__description {
+    margin-bottom: $component-padding;
+
+  }
+}

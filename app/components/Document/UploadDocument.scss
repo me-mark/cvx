@@ -1,0 +1,49 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.upload-document {
+  border-radius: $base-border-radius;
+  margin: 25px 0px;
+
+  &__title {
+    @include component-title;
+  }
+
+  &__content {
+    @include component;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__placeholder {
+    height: 61px;
+    text-align: left;
+    font-size: $base-font-size;
+    letter-spacing: 0.54px;
+    color: #8BA7B9;
+    width: 883px;
+    opacity: 1;
+    @include center;
+    justify-content: left;
+  }
+
+  &__upload {
+    display: flex;
+    gap: $item-gap;
+    justify-content: space-between;
+    width: 877px;
+  }
+
+  &__upload-field {
+    flex-grow: 1;
+  }
+
+  &__button {
+    width: 220px;
+    height: $base-line-height;
+    background: #48AC98 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 40px #48AC985C;
+    border-radius: 10px;
+    opacity: 1;
+  }
+}

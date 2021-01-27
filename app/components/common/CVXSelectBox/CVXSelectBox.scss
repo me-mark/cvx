@@ -1,0 +1,51 @@
+@import '../../../styles/variables.scss';
+
+.select-box {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  outline: none;
+  border-radius: $base-border-radius;
+  font-size: $base-font-size;
+  font-weight: bold;
+  color: $base-text-color;
+  height: $base-line-height;
+  .ant-select-disabled.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    color: $base-text-color;
+  }
+}
+.dropdown {
+  z-index: 4;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 17px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 10px 40px 34px -17px rgba(0, 0, 0, 0.25);
+  color: $base-text-color;
+  font-size: $base-font-size;
+  cursor: pointer;
+  -webkit-text-size-adjust: none;
+}
+.option {
+  color: $base-text-color;
+  font-size: $base-font-size;
+  cursor: pointer;
+  -webkit-text-size-adjust: none;
+  font-weight: bold;
+  &:hover {
+    background: none;
+    color: #4a9cb4;
+  }
+}
+.ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: white;
+  color: #4a9cb4;
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: white;
+}
+.ant-select-selector {
+  padding: 9px 40px 9px 17px !important;
+  min-height: $base-line-height;
+  color: $base-text-color;
+}

@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+.general-info {
+  @include component;
+  display: flex;
+  justify-content: space-between;
+  gap: $item-gap;
+  margin-top: $component-margin-bottom;
+  margin-bottom: $component-margin-bottom;
+  &__input {
+    display: flex;
+    margin-right: 30px;
+    gap: $item-gap;
+    &__label {
+      font-size: calc(#{$base-font-size} + 2px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-width: 60px;
+    }
+    &__money {
+      .ant-input {
+        text-align: center;
+        font-size: $base-font-size !important;
+      }
+    }
+  }
+}

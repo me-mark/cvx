@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.dashboard__notification {
+  background: white;
+  padding: 50px;
+  display: grid;
+  border-radius: 6px;
+  grid-template-areas:
+    'a b'
+    'a c';
+
+  &__icon {
+    grid-area: a;
+    margin-right: $component-padding;
+    font-size: 40px;
+  }
+
+  &__title {
+    grid-area: b;
+    font-size: calc(#{$base-font-size} + 4px);
+    font-weight: bold;
+  }
+
+  &__content {
+    grid-area: c;
+    text-align: justify;
+    font-size: calc(#{$base-font-size} - 4px);
+  }
+}

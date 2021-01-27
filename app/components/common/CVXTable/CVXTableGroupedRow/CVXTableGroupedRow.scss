@@ -1,0 +1,53 @@
+@import '../../../../styles/variables.scss';
+
+.table-grouped-row {
+  &__parent-row {
+    color: white;
+    background-color: #1a5c6f;
+    border-radius: 10px;
+  }
+}
+
+.custom-row {
+  color: #909090;
+  font-size: calc(#{$base-font-size} - 2px);
+  font-weight: bold;
+  cursor: pointer;
+
+  td {
+    text-align: center;
+    height: $base-line-height;
+    background-color: white;
+  }
+  &__tr-space {
+    height: 4px;
+  }
+
+  td:first-child {
+    border-radius: $base-border-radius 0 0 $base-border-radius;
+    padding-left: calc(#{$item-gap} / 5);
+  }
+  td:last-child {
+    border-radius: 0 $base-border-radius $base-border-radius 0;
+    padding-right: calc(#{$item-gap} / 5);
+  }
+
+  td:nth-child(2) {
+    text-align: left;
+  }
+}
+
+.bold-field {
+  color: $base-text-color;
+}
+
+.custom-selected-row-grouped {
+  td {
+    color: #8ba7b9 !important;
+    background-color: #dfeaed !important;
+  }
+
+  .bold-field {
+    color: #8ba7b9 !important;
+  }
+}

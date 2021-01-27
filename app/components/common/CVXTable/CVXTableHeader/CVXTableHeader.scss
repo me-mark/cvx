@@ -1,0 +1,13 @@
+@import '../../../../styles/variables.scss';
+
+.custom-table {
+  &__header {
+    color: $base-text-color;
+    font-size: calc(#{$base-font-size} - 1px);
+    font-weight: bold;
+    text-align: center;
+    th {
+      padding: $item-gap 0;
+    }
+  }
+}

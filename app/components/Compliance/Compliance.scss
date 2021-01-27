@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+@import '../../styles//mixins.scss';
+
+.application-info-filter {
+  background-color: #dfeaed;
+  border-radius: 10px;
+  padding: 20px;
+  grid-gap: 10px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  display: flex;
+}
+
+.app-info-box-filter {
+  width: 33%;
+  position: relative;
+}
+.filter-element {
+  margin-right: 30px;
+}
+.filter-element-last {
+  margin-right: 0px;
+}
+
+.compliance-detail {
+  &__header {
+    font-size: $base-font-size;
+    width: 60%;
+    height: $base-line-height;
+    padding: 0px 10px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: rgb(223, 234, 237);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title {
+      color: #495B70;
+      font-weight: bold;
+      font-size: calc(#{$base-font-size} + 6px);
+      font-weight: bold;
+      height: 50px;
+      line-height: 50px;
+    }
+    &__action {
+      width: 33.33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      cursor: pointer;
+      &__title {
+        color: #565a66;
+        font-size: $base-font-size;
+        font-weight: bold;
+      }
+    }
+  }
+  &__description {
+    font-size: $base-font-size;
+    text-align: justify;
+    color: black;
+    margin-bottom: 20px;
+  }
+}
+.right-slash {
+  border-right: solid 2px #cdd9e7;
+}
+
+.p-text-warning {
+  margin: 15px 15px;
+  text-align: left;
+  font-size: $base-font-size;
+  letter-spacing: 0.54px;
+  color: #9cb0bd;
+}
+
+.workflow-detail-content {
+  background-color: #dfeaed;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+}
+
+.covenant-filters {
+  @include component;
+  @include center;
+  border-radius: $base-border-radius;
+  margin: calc(#{$item-gap} * 2) 0px;
+  display: flex;
+  &__placeholder {
+    width: 50%;
+    font-size: $base-font-size;
+  }
+  &__filters {
+    flex-grow: 1;
+    margin-bottom: 0px;
+  }
+}

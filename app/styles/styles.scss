@@ -1,0 +1,427 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+#main {
+  padding: 0 !important;
+}
+
+body {
+  letter-spacing: 0.54px;
+  height: auto;
+  color: $base-text-color;
+  margin: 0;
+  font-size: $base-font-size;
+  font-family: "Gilroy-Medium", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #f5f5f5;
+}
+
+.page-wrapper {
+  padding: ($header-height + 50px) 50px 0px 50px;
+  height: auto;
+  min-height: 100vh;
+  background: #F1F4F4;
+}
+
+.dashboard-page-wrapper {
+  padding: ($header-height/2 + 50px) 50px 0px 50px;
+  height: auto;
+  min-height: 100vh;
+  background: #F1F4F4;
+}
+
+.upcoming-tasks-wrapper-custom {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  /* padding-top: 43px; */
+  padding-bottom: 20px;
+}
+
+.transfer-application-wrapper-custom {
+  width: 100%;
+  padding: 27px 40px;
+  background-color: #dfeaed;
+  border-radius: 10px;
+}
+
+.upcoming-tasks-table-custom {
+  width: 100%;
+}
+
+.upcoming-tasks-filter-one-control {
+  width: 25%;
+}
+
+.app-info-box {
+  width: 50%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.app-info-box-upload {
+  width: -webkit-calc(66.666663% - 8px);
+  width: calc(66.666663% - 8px);
+  margin-left: 15px;
+}
+
+.next-stage-worflow-bottom .btn-upload {
+  width: 20%;
+}
+
+.btn-upload {
+  display: block;
+  background-color: #48ac98;
+  border-radius: 10px 0 10px 10px;
+  padding: 15px;
+  font-size: calc(#{$base-font-size} - 2px);
+  text-align: center;
+  width: 100%;
+  -webkit-transition: background-color 0.5s, box-shadow 0.5s;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  box-shadow: 0 20px 40px rgba(72, 172, 152, 0.36);
+  margin-right: 15px;
+  color: #ffffff;
+}
+
+.file {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  overflow: visible;
+}
+
+.div-clear {
+  display: block;
+  margin: 10px 0;
+}
+
+.app-info-input-wrapper {
+  height: 30px;
+  border-radius: 10px;
+  padding: 1px 0;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.app-info-input-wrapper-check-box {
+  height: 30px;
+  border-radius: 10px;
+  padding: 1px 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.workflow-detail-content-padding-top {
+  background-color: #dfeaed;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.app-info-input-wrapper-textarea {
+  border-radius: 10px;
+  padding: 1px 0;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .ant-input[disabled] {
+    color: $base-text-color;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+
+  &-title {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0 70px 0 17px;
+    pointer-events: none;
+    letter-spacing: 0.2em;
+    color: #b5b5b5;
+    font-size: calc(#{$base-font-size} - 4px);
+    text-transform: uppercase;
+  }
+
+  &-list {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    outline: none;
+    padding: 35px 70px 9px 10px;
+    border-radius: 10px;
+    color: $base-text-color;
+    font-weight: bold;
+    height: 100%;
+    border: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    font-size: $base-font-size;
+
+    &-option {
+      padding: 29px 70px 9px 17px;
+      border-radius: 10px;
+      color: $base-text-color;
+      height: 100%;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      outline: none;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      color: $base-text-color;
+      font-size: $base-font-size;
+      position: relative;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -webkit-text-size-adjust: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      user-select: none;
+    }
+  }
+}
+
+.color-white {
+  color: white;
+}
+
+.table-background {
+  background-color: #70abbb;
+}
+
+.workflow-detail-content {
+  border-radius: 10px 0px 10px 10px;
+}
+
+.gap-1 {
+  gap: 10px;
+}
+
+.ant-input {
+  border: none !important;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+  border: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none !important;
+}
+
+.ant-input-affix-wrapper {
+  padding: 5px 5px;
+  border: none !important;
+  border-radius: 10px;
+}
+
+.ant-input-affix-wrapper>input.ant-input {
+  position: relative;
+  top: 5px;
+  font-size: $base-font-size;
+  color: $base-text-color;
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.ant-input-prefix {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.ant-btn-text {
+  background: #fff !important;
+
+  &:hover {
+    background: #f0f4f7 !important;
+    color: $base-text-color !important;
+  }
+}
+
+.global-loading {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4f7;
+  position: absolute;
+  top: 0px;
+}
+
+.checklist-wrapper {
+  z-index: 2;
+  align-items: center;
+  top: 140px;
+  background: white;
+  width: 100%;
+}
+
+.checklist-box {
+  width: 150px;
+}
+
+.confirm-modal {
+  &__ok-button {
+    background-color: #1a5c6f;
+    border: none;
+  }
+
+  &__ok-button:hover {
+    background-color: #1a5c6f;
+  }
+
+  &__cancel-button {
+    color: $base-text-color;
+  }
+
+  &__cancel-button:hover {
+    color: $base-text-color;
+  }
+}
+
+.ant-form-item-has-error .ant-input:focus,
+.ant-form-item-has-error .ant-input-affix-wrapper:focus,
+.ant-form-item-has-error .ant-input-focused,
+.ant-form-item-has-error .ant-input-affix-wrapper-focused {
+  border-color: none;
+  border-right-width: 0px !important;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.td-border {
+  background-color: #cdd9e7;
+}
+
+input {
+  background: none;
+}
+
+.status-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  transition: transform 0.1s;
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+
+.status {
+  display: inline-block;
+  white-space: nowrap;
+  width: fit-content;
+  min-width: 200px;
+  max-width: fit-content;
+  border-radius: 10px 10px 0px 0px;
+
+  h2 {
+    margin-bottom: 0px;
+  }
+}
+
+.cvx-col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.cvx-modal {
+  .ant-modal-title {
+    font-size: calc(#{$base-font-size} + 6px);
+  }
+
+  .ant-upload-list {
+    margin-bottom: $component-padding;
+
+    .ant-upload-list-text-container {
+      .ant-upload-list-item {
+        padding: $item-gap;
+        margin: 0 0 $item-gap 0;
+        height: 40px;
+        background-color: white;
+        border-radius: $base-border-radius;
+
+
+        .ant-upload-text-icon,
+        .ant-upload-list-item-name,
+        .ant-upload-list-item-card-actions {
+          font-size: $base-font-size !important;
+        }
+
+        .ant-upload-text-icon,
+        .ant-upload-list-item-card-actions {
+          @include center;
+        }
+      }
+
+      .ant-upload-list-item :hover {
+        background-color: white;
+        border-radius: $base-border-radius;
+      }
+
+      .ant-upload-list-item-info {
+        background-color: white;
+      }
+    }
+  }
+
+  font-size: $base-font-size;
+}
+
+.ant-notification-notice-message,
+.ant-message-success,
+.ant-message-error {
+  font-size: $base-font-size !important;
+}
+
+.ant-message .anticon {
+  top: -5px !important;
+}
+
+.cvx {
+  &__main-title {
+    font-size: calc(#{$base-font-size} + 2px);
+  }
+
+  &__main-content {
+    font-size: calc(#{$base-font-size} + 2px);
+  }
+
+  &__main-title-2 {
+    font-size: calc(#{$base-font-size} + 4px);
+  }
+}

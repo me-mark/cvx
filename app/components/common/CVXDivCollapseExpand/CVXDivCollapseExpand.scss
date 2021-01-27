@@ -1,0 +1,20 @@
+@import '../../../styles/variables.scss';
+.compliance-contend-collap-expand {
+  width: 100%;
+}
+
+.handle-collapse-expand {
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  &__title {
+    flex-grow: 1;
+  }
+  &__icon {
+    flex-grow: 1;
+    font-size: $base-font-size;
+    text-align: right;
+  }
+}

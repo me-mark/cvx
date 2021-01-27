@@ -1,0 +1,18 @@
+@import '../../../../styles/variables.scss';
+
+.bold-field {
+  color: $base-text-color;
+}
+.custom-selected-row {
+  td {
+    color: #8ba7b9 !important;
+    background-color: #dfeaed !important;
+    text-align: center;
+  }
+  .bold-field {
+    // font-weight: bold;
+  }
+  &__addition-info {
+    color: #909090;
+  }
+}

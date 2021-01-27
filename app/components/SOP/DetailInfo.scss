@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.detail-info {
+  @include component;
+
+  &__total {
+    display: flex;
+    gap: $item-gap;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      font-size: $base-font-size;
+    }
+    &__buttons {
+      display: flex;
+      gap: $item-gap;
+      margin-top: 30px;
+    }
+  }
+
+  &__titles {
+    margin-top: 60px;
+    margin-bottom: $item-gap;
+    font-size: $base-font-size;
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    gap: 20px;
+  }
+
+  &__content {
+    &__item {
+      margin-bottom: $item-gap;
+      display: grid;
+      grid-template-columns: 2fr 5fr 3fr;
+      gap: 20px;
+
+      &__detail {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        width: 80%;
+        height: $base-line-height;
+        display: flex;
+        font-weight: bold;
+        font-size: $base-font-size;
+        @include center;
+      }
+    }
+  }
+
+  &__add-button {
+    text-align: right;
+  }
+}

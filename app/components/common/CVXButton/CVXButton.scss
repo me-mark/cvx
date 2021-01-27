@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+.cvx-button {
+  border-radius: 8px;
+  height: $base-line-height;
+  line-height: 38px;
+  text-align: center;
+  border: none;
+  font-weight: $font-weight-bold;
+  min-width: 200px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  font-size: $base-font-size;
+  >span {
+    margin-left: 8px;
+  }
+  &:hover {
+    color: white;
+    background-color: #1a5c6f;
+  }
+}
+.anticon {
+  font-size: calc(#{$base-font-size} + 7px);
+}

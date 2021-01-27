@@ -1,0 +1,13 @@
+@import '../../../styles/variables.scss';
+.cvx-icon-button {
+  background: #70abbb;
+  color: white;
+  border-radius: 8px;
+  height: 38px;
+  width: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+.anticon {
+  font-size: calc(#{$base-font-size} + 7px);
+}

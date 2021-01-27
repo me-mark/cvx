@@ -1,0 +1,52 @@
+@import '../../../styles/variables.scss';
+.cvx-sub-tab {
+  &__wrapper {
+    position: relative;
+    &__last-button {
+      position: absolute;
+      left: -25px;
+      top: 12px;
+      cursor: pointer;
+      color: #a2b9bf;
+      &:hover {
+        color: #1a5c6f;
+      }
+    }
+    &__next-button {
+      position: absolute;
+      right: -25px;
+      top: 12px;
+      cursor: pointer;
+      color: #a2b9bf;
+      &:hover {
+        color: #1a5c6f;
+      }
+    }
+    &__content {
+      overflow: hidden;
+      border-bottom: 1px solid #f0f4f7;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &__tab {
+        display: inline-block;
+        white-space: nowrap;
+        width: fit-content;
+        min-width: 200px;
+        max-width: fit-content;
+        border-radius: 10px 10px 0px 0px;
+        margin-right: 5px;
+        padding: calc(#{$item-gap} * 1.5);
+        cursor: pointer;
+        background-color: #dfeaed;
+      }
+      .active {
+        background-color: #70abbb;
+        color: white;
+      }
+    }
+  }
+  &__title {
+    font-size: calc(#{$base-font-size} + 4px);
+  }
+}

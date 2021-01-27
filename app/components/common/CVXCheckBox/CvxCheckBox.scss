@@ -1,0 +1,21 @@
+@import '../../../styles/variables.scss';
+.ant-checkbox-group-item {
+  display: block;
+  margin-right: 0;
+  padding: 5px 5px;
+}
+.div-checkbox-group-item {
+  padding: 5px 5px;
+  font-size: $base-font-size;
+}
+
+.ant-checkbox + span {
+  color: #b5b5b5;
+  font-size: $base-font-size;
+  font-weight: bold;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  border: none;
+  background-color: #48ac98;
+  opacity: 1;
+}
